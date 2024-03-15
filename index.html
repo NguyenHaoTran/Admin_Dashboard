@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin_Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./images/logo.png" />
+            <h2>Ng.<span class="danger">Hao.t</span></h2>
+          </div>
+
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#" >
+            <span class="material-icons-sharp"> account_circle </span>
+            <h3>Khách hàng</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> receipt_long </span>
+            <h3>Đơn hàng</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">insights</span>
+            <h3>Thống kê</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">mail_outline</span>
+            <h3>Thông báo</h3>
+            <span class="message-count">31</span>
+          </a>
+          <a href="./pages/product/product.html">
+            <span class="material-icons-sharp">inventory</span>
+            <h3>Sản Phẩm</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">report_gmailerrorred</span>
+            <h3>Báo cáo</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">settings</span>
+            <h3>Cài đặt</h3>
+          </a>
+          <a href="/pages/product/product.html">
+            <span class="material-icons-sharp">add</span>
+            <h3>Thêm sản phẩm</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Đăng xuất</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- Main section -->
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <!-- Doanh thu -->
+          <div class="sales">
+            <span class="material-icons-sharp">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Tổng doanh thu</h3>
+                <h1>35,000đ</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>33%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">24h gần nhất / đ.vị:Triệu</small>
+          </div>
+          <!-- Chi phí -->
+          <div class="expenses">
+            <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Tổng chi phí</h3>
+                <h1>25,000đ</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">24h gần nhất / đ.vị:Triệu</small>
+          </div>
+          <!-- Thu nhập -->
+          <div class="income">
+            <span class="material-icons-sharp">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Tổng thu nhập</h3>
+                <h1>6,000đ</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>20%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">24h gần nhất / đ.vị:Triệu</small>
+          </div>
+        </div>
+        <!-- Đơn hàng gần đây-->
+        <div class="recent-orders">
+          <h2>Đơn hàng gần đây</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Tên sản phẩm</th>
+                <th>Mã số sản phẩm</th>
+                <th>Payment</th>
+                <th>Trạng thái</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td>Gói bảo trì số 3</td>
+                <td>11293</td>
+                <td>Quá hạn</td>
+                <td class="warning">Đang đợi</td>
+                <td class="primary">Chi tiết</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <a href="#">Xem thêm</a>
+        </div>
+      </main>
+      <!-- Right -->
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+          <div class="proflie">
+            <div class="info">
+              <p>Hey, <b>Ng.hao.t</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div>
+              <img class="profile-photo" src="./images/profile-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Thông báo gần đây -->
+        <div class="recent-updates">
+          <h2>Thông báo gần đây</h2>
+          <!--  -->
+          <div class="updates">
+            <div class="update">
+              <div>
+                <img
+                  class="profile-photo"
+                  src="./images/profile-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="mesage">
+                <p><b>Tuấn Trần</b> vừa gửi phản hồi</p>
+                <small class="text-muted">2 phút trước</small>
+              </div>
+            </div>
+            <div class="update">
+              <div>
+                <img
+                  class="profile-photo"
+                  src="./images/profile-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="mesage">
+                <p><b>Thu Minh</b> vừa đánh giá sản phẩm</p>
+                <small class="text-muted">10 phút trước</small>
+              </div>
+            </div>
+            <div class="update">
+              <div>
+                <img
+                  class="profile-photo"
+                  src="./images/profile-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="mesage">
+                <p><b>Hải Sơn</b> vừa gửi phản hồi</p>
+                <small class="text-muted"> 1 giờ trước</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Thống kê -->
+        <div class="sales-analytics">
+          <h2>Phân tích</h2>
+          <!--  -->
+          <div class="item online">
+            <div class="icon">
+              <span class="material-icons-sharp">shopping_cart</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ĐƠN ONLINE</h3>
+                <small class="text-muted">24h trước</small>
+              </div>
+              <h5 class="success">+20%</h5>
+              <h3>2965</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-icons-sharp">shopping_cart</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ĐƠN OFFLINE</h3>
+                <small class="text-muted">24h trước</small>
+              </div>
+              <h5 class="danger">-9%</h5>
+              <h3>985</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-icons-sharp">shopping_cart</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>KHÁCH HÀNG MỚI</h3>
+                <small class="text-muted">24h trước</small>
+              </div>
+              <h5 class="success">+12%</h5>
+              <h3>673</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <a href="/pages/product/product.html">
+                <span class="material-icons-sharp">add</span>
+                <h3>Thêm sản phẩm</h3>
+              </a>                       
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="orders.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
